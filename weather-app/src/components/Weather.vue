@@ -1,4 +1,4 @@
-<template>
+ <template>
 <div class="container p-0">
     <div class="d-flex">
         <div class="card main-div w-100">
@@ -64,8 +64,67 @@
         font-weight: 400;
     }
     .main-div{
+        border-radius: 20px;
+        color: #fff;
+        background-image: "123.jpg";
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
         
     }
+    .temp{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .main-div:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
+        z-index: 1;
+    }
+    .card-2{
+        background-color: #212730;
+        border-radius: 20px;
+    }
+    .card-details{
+        margin-left: 19px;
+    }
+    .h1_left{
+        position: absolute;
+        bottom: 25px;
+        left: 16px;
+        font-size: 3vw;
+        line-height: 1.2;
+    }
+    .h3_left{
+        position: absolute;
+        bottom: 25px;
+        left: 16px;
+        font-size: 3vw;
+        line-height: 1.2;
+    }
+    .h3_left small{
+        font-size: 1rem;
+    }
+    table{
+        position: relative;
+        left: 15px;
+        border-collapse: separate;
+        border-spacing: 15px;
+        width: 85%;
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    th,
+    td{
+        font-size: 18px;
+        color: #fff;
+    }
+
   
     </style>
     
