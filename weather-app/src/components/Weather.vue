@@ -31,6 +31,9 @@
                 </tr>
             </tbody>
         </table>
+
+        <DaysWeather></DaysWeather>
+       
         <div id="div_Form" class="d-flex m-3 justify-content-center">
             <form action="">
                 <input type="button" value="Change Location" class="btn change-btn btn-primary">
@@ -41,10 +44,13 @@
     </template>
     
     <script>
+
+    import DaysWeather from './DaysWeather.vue';
     
     export default {
         name: 'myWeather',
   components: {
+    DaysWeather,
     
   },    
     }
@@ -66,7 +72,6 @@
     .main-div{
         border-radius: 20px;
         color: #fff;
-        background-image: "123.jpg";
         background-size: cover;
         background-position: center;
         background-blend-mode: overlay;
@@ -123,6 +128,21 @@
     td{
         font-size: 18px;
         color: #fff;
+    }
+    td{
+        text-align: right;
+    }
+    table,
+    tr:hover {
+        color: red;
+    }
+
+    .change_btn{
+        background-image: linear-gradient(to right, cyan, magenta);
+    }
+    .change_btn:hover {
+        transform: scale(0.9);
+        transition: transform 0.1s ease;
     }
 
   
